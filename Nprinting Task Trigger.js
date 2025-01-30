@@ -16,12 +16,14 @@ function ( qlik,template) {
 					MyTextbox: {
 							label:"Enter Nprinting Server",
 							type: "string",
-							ref:"Rserver"
+							ref:"Rserver",
+							expression:"optional"
 						},
 						MyText: {
 							label:"Enter Nprinting Task Id",
 							type: "string",
-							ref:"RTask"
+							ref:"RTask",
+							expression:"optional"
 						},
 					MyTextB: {
 							label:"Enter Button Label",
@@ -60,6 +62,7 @@ function ( qlik,template) {
 			
 			 var html  = '<div id ="execute-reload" style="height: 100%;position: relative" class="ng-scope"><button  id ="reload'+r+'" style="width: 100%;height: 100%;transition: transform .1s ease-in-out;position: absolute;bottom: 0;left: 0; top: 0;right: 0;margin: auto;cursor: pointer;color: #ffffff;font-weight: bold;background-color:'+layout.myColor.color+ ';border: none;" tabindex="-1"><text style="white-space: nowrap; font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: inherit; margin: 0px 3%; display: flex; align-items: center; justify-content: center;"><span style="white-space: nowrap; text-overflow: ellipsis; overflow: visible;">' +layout.RLabel +'</span></text></button></div>';
                 $element.html( html );
+				console.log(layout.Rserver);
 				  
 			 var timerId;
 			 var counter=0;
@@ -68,7 +71,7 @@ function ( qlik,template) {
 		     var buttonid='#reload'+r ;
 			 var alerted=false;
 			 var taskId= layout.RTask;
-		     var servername= layout.Rserver;
+			 var servername=layout.Rserver;
 			 
 				function setbutton(color, text)
 				{
@@ -78,6 +81,7 @@ function ( qlik,template) {
 				  
 
 			$(buttonid).click(function(event) {
+			console.log(servername & taskId);
 				
 				if(servername == null || servername == '')
 				{
