@@ -1,0 +1,19 @@
+https://qlik.dev/apis/javascript/extension/#definitions-extension
+Functions:
+https://qlik.dev/apis/javascript/extension/#definitions-extensionfn
+Property panel definitions:
+https://qlik.dev/apis/javascript/extension/#definitions-pp
+The accordion definition property template can be used to add a custom accordion:
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-accordion
+custom property of button type:
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-button
+
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-colorpicker
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-defaultaddons
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-defaultdimensions
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-defaultmeasures
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-defaultsettings
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-defaultsorting
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-dropdown
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-items
+https://qlik.dev/apis/javascript/extension/#definitions-pp-entries-link
